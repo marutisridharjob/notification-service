@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class NotificationController {
 
     @GetMapping(value = "{notificationId}")
-    public Notifications getNotifications(@PathVariable("notificationId")String notificationId){
-        Notifications notificationOne = new Notifications(notificationId, "Notification Description "+notificationId);
+    public Notifications getNotifications(@PathVariable("notificationId") String notificationId) {
+        Notifications notificationOne = new Notifications(notificationId, "Notification Description " + notificationId);
 
         return notificationOne;
 
